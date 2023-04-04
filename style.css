@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation bar  */
+.navbar {
+    background-color: brown;
+    color: white;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    font-weight: 600;
+}
+
+.items .ul span {
+    color: orangered;
+}
+
+.items .ul a {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.items .ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    transition: 300ms ease;
+    height: 4rem;
+    margin: 0;
+}
+
+.items li {
+    padding: .5rem 1.3rem;
+    border-radius: 3rem;
+}
+
+.items li a:hover {
+    color: black;
+}
+
+.bar{
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.8rem;
+    display: none;
+}
+.fafa{
+   
+    position: absolute;
+    float: left;
+    right: 14px;
+    top: 8px;
+    font-family: 'FontAwesome';
+    font-style: normal;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* home section */
+.container {
+    margin: auto;
+}
+
+.left,
+.right {
+    text-align: justify;
+line-height:1.5rem;
+    width: 45%;
+    padding: 1rem;
+}
+
+.home {
+    background-image: url("files/pic22.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+}
+
+.col {
+    display: flex;
+    color: white;
+
+}
+
+.col .left {
+    margin: 12rem 5rem;
+    transition: all 1s ease;
+    width: 90%;
+    padding: 0;
+}
+.mainline{
+    line-height: 3rem;
+}
+.col .left .text1 {
+    font-size: 3rem;
+}
+
+.col .left .text2 {
+    font-size: 5rem;
+    margin: 3rem 0rem;
+}
+
+.col .left .text3 {
+    font-size: 2rem;
+}
+
+.col .text3 span {
+    color: red;
+}
+
+.col .left a {
+    background-color: rgb(135 0 26);
+    color: aliceblue;
+    border: 2px solid crimson;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    text-decoration: none;
+}
+
+.education .right a,
+.project a,
+.contact .btn,
+.about .right a {
+    background-color: rgb(135 0 26);
+    color: aliceblue;
+    border: 2px solid crimson;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 8rem;
+}
+
+.home .col .left a:hover,
+.education .right a:hover,
+.project .left a:hover,
+.contact .btn:hover,
+.about .right a:hover {
+    color: crimson;
+    background: none;
+}
+.text ul{
+    list-style-type: disclosure-closed;
+}
+.text li span{
+    color: #461919;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+    line-height: 2.3rem;
+}
+.education .text li p{
+    text-align: right;
+    margin-top: 5px;
+}
+/* skill section */
+.skills {
+    display: flex;
+}
+
+.skills .left {
+    line-height: 1.5rem;
+}
+#rmbtn{
+      color: brown;
+    cursor: pointer;
+}
+.skills .left .readmoreinfo{
+  display:none;
+}
+
+.skillsection h1,
+.educationsection h1,
+.projectsection h1,
+.contactsection h1,
+.aboutsection h1 {
+    margin: 2rem 1rem;
+    text-align: center;
+    margin: 7rem 4rem 3rem 4rem;
+}
+
+.skills .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    color: blue;
+}
+
+.skills .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills .right .java::before {
+    width: 80%;
+}
+.skills .right .react::before {
+    width: 70%;
+}
+
+.skills .right .javascript::before {
+    width: 70%;
+}
+
+.skills .right .c::before {
+    width: 80%;
+    
+}
+
+.skills .right .mysql::before {
+    width: 70%;
+}
+
+.skills .right .html::before {
+    width: 80%;
+}
+
+/* education section */
+.education {
+    display: flex;
+}
+
+.education .left img {
+    height: 23rem;
+    width: -webkit-fill-available !important;
+}
+
+.education .right {
+    display: table;
+}
+
+/* projectsection  */
+.project {
+    display: flex;
+}
+
+.project .right img {
+    height: 17rem;
+}
+.project .text li{
+    font-size: 1.3rem;
+}
+.project .text p{
+    font-size: 1rem;
+}
+/* contact section */
+.contact .left {
+    width: 90%;
+    margin: auto;
+    line-height: 2rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: .5rem;
+    font-size: 1rem;
+    margin: .5rem;
+    width: 60%;
+}
+.contact .msgme{
+    margin: 1rem;
+}
+.contact .btn {
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+}
+
+.about .left img {
+    height: 25rem;
+    margin: auto 2rem;
+}
+
+/*footer section*/
+footer .fcol {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid black;
+    align-items: flex-start;
+    color: black;
+    background-color: antiquewhite;
+}
+
+footer .col1,
+.col2,
+.col3,.col4 {
+    display: grid;
+    width: 15rem;
+    line-height: 1.5rem;
+    padding: 0rem 1rem;
+}
+
+footer .col4 i {
+    margin: 0.3rem;
+}
+
+footer .fcol a {
+    text-decoration: none;
+    color: #350606;
+    display: block;
+}
+
+/* Responsive code */
+
+@media (min-width:2000px) {
+    body{
+        display: none;
+    }
+}
+@media (max-width:715px) {
+    #btn {
+        display: block;
+    }
+    #can{
+        display: none;
+    }
+
+    .listitem {
+        display: none;
+    }
+
+    .displayflex {
+        display: block;
+        text-align: center;
+    }
+
+    .flexcolumn {
+        flex-direction: column;
+    }
+
+    .home,
+    .skills,
+    .project,
+    .contact,
+    .education,
+    .about {
+        display: block;
+    }
+    .col .left .text1,
+    .col .left .text3
+    {
+        font-size: 1.5rem;
+    }
+    .col .left .text2{
+        font-size: 2.5rem;
+    }
+    .left,
+    .right {
+        text-align: justify;
+        width: 82%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .images {
+        display: block;
+        margin: auto !important;
+        height: 52% !important;
+        width: 100% !important;
+    }
+    .col .left .text2 {
+        margin: 1rem 0rem;
+    }
+    footer .fcol{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
