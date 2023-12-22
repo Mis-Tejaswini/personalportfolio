@@ -89,7 +89,7 @@ line-height:1.5rem;
 }
 
 .home {
-    background-image: url("files/pic22.jpg");
+    background-image: url("files/pic.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 200px;
@@ -174,7 +174,22 @@ line-height:1.5rem;
     text-align: right;
     margin-top: 5px;
 }
+
+/* about 
+.aboutsection{
+    background-image: url("files/blackbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;    
+}*/
 /* skill section */
+
+ /* .skillsection{
+    background-image: url("files/blackbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+} */
 .skills {
     display: flex;
 }
@@ -258,6 +273,13 @@ line-height:1.5rem;
 }
 
 /* education section */
+/*
+.educationsection{
+    background-image: url("files/blackbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+} */
 .education {
     display: flex;
 }
@@ -271,7 +293,13 @@ line-height:1.5rem;
     display: table;
 }
 
-/* projectsection  */
+/* projectsection  
+.projectsection{
+    background-image: url("files/blackbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+} */
 .project {
     display: flex;
 }
@@ -285,7 +313,13 @@ line-height:1.5rem;
 .project .text p{
     font-size: 1rem;
 }
-/* contact section */
+/* contact section 
+  .contactsection{
+    background-image: url("files/blackbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px; 
+} */
 .contact .left {
     width: 90%;
     margin: auto;
@@ -301,6 +335,7 @@ line-height:1.5rem;
 }
 .contact .msgme{
     margin: 1rem;
+  /* color: white; */
 }
 .contact .btn {
     cursor: pointer;
