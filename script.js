@@ -43,3 +43,20 @@ let rmbtn=document.getElementById("rmbtn");
   rmbtn.addEventListener("click",()=>{
     rm.classList.toggle("readmoreinfo");
   });
+
+
+  function switchTab(onclick, skills,experience,education) {
+    // Deactivate all tabs and contents
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-contents');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+
+    // Activate the clicked tab and corresponding content
+    onclick.target.classList.add('active');
+    document.getElementById(skills).classList.add('active');
+    document.getElementById(experience).classList.add('active');
+    document.getElementById(education).classList.add('active');
+  }
+
+  
