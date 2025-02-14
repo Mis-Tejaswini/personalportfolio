@@ -52,7 +52,7 @@ var sidemenu = document.getElementById("sidemenu");
 function openmenu(){
   console.log("Opening menu...");
   sidemenu.classList.add("open");
-  sidemenu.style.right= "150px";
+  sidemenu.style.right= "90px";
 }
 
 function closemenu(){

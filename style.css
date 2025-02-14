@@ -111,7 +111,7 @@ nav ul li a:hover::after{
 .container {
     margin: auto;
 }
-
+/*
 .left,
 .right {
     text-align: justify;
@@ -189,21 +189,7 @@ nav ul li a:hover::after{
     margin-top: 5px;
 }
 
-/* about 
-.aboutsection{
-    background-image: url("files/blackbackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200px;    
-}*/
-/* skill section */
 
- /* .skillsection{
-    background-image: url("files/blackbackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200px;
-} */
 .skills {
     display: flex;
 }
@@ -228,104 +214,23 @@ nav ul li a:hover::after{
     text-align: center;
     margin: 7rem 4rem 3rem 4rem;
 }
-/*
-.skills .right .bars {
-    margin-bottom: 15px;
-}
 
-.skills .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.skills .right span {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.skills .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-    color: blue;
-}
-
-.skills .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
-
-.skills .right .java::before {
-    width: 80%;
-}
-.skills .right .react::before {
-    width: 70%;
-}
-
-.skills .right .javascript::before {
-    width: 70%;
-}
-
-.skills .right .c::before {
-    width: 80%;
-    
-}
-
-.skills .right .mysql::before {
-    width: 70%;
-}
-
-.skills .right .html::before {
-    width: 80%;
-}
-*/
-/* education section */
-/*
-.educationsection{
-    background-image: url("files/blackbackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200px;
-} */
-.education {
-    display: flex;
-}
-
-.education .left img {
-    height: 23rem;
-    width: -webkit-fill-available !important;
-}
-
-.education .right {
-    display: table;
-}
-
-/* projectsection  
-.projectsection{
-    background-image: url("files/blackbackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200px;
-} */
 .project {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 7rem;
 }
-.project.left{
-    flex-basis: 35%;
+
+.ProjectLeft{
+    flex-basis: 30%;
 }
-.project.right{
+.ProjectRight{
     flex-basis: 60%;
 }
-.project .left img {
+
+.project .ProjectLeft img {
     height: 17rem;
 }
 .project .text li{
@@ -338,13 +243,13 @@ nav ul li a:hover::after{
 .contact-left {
     flex-basis: 40%;
 }
+
 .btnproject{
     margin-left: 10pc;
+    margin-top: 3pc;
 }
 
-.project .left img {
-    height: 12rem;
-}
+
 
 .Contact{
 
@@ -354,7 +259,7 @@ nav ul li a:hover::after{
 }
 .contact-left p {
     margin-top: 30px;
-    margin-left: 4pc;
+    margin-left: 6pc;
 
 }
 .contact-left p i {
@@ -387,7 +292,7 @@ form input, form textarea {
 }
 .social-icons {
     margin-top: 30px;
-    margin-left: 4pc;
+    margin-left: 6pc;
 
 }
 .social-icons a {
@@ -570,36 +475,6 @@ form .btn2 {
 .copyright i{
     color: #f40b34;
 }
-/*footer section*/
-footer .fcol {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    padding: 2rem 1rem;
-    border-top: 1px solid black;
-    align-items: flex-start;
-    color: black;
-    background-color: antiquewhite;
-}
-
-footer .col1,
-.col2,
-.col3,.col4 {
-    display: grid;
-    width: 15rem;
-    line-height: 1.5rem;
-    padding: 0rem 1rem;
-}
-
-footer .col4 i {
-    margin: 0.3rem;
-}
-
-footer .fcol a {
-    text-decoration: none;
-    color: #350606;
-    display: block;
-}
 
 
 
@@ -628,8 +503,8 @@ nav .fas{
     nav ul{
         background: #ff004f;
         position: fixed;
-        top: 0px;
-        right:150px; 
+        top: -16px;
+        right:90px; 
         /*left: 190px;  */
         width: 200px;
         height: 100vh;
@@ -643,6 +518,7 @@ nav .fas{
      nav ul li{
         display: block;
         margin: 25px;
+        margin-left: -19px;
      }
 /*
      .open {
@@ -683,7 +559,16 @@ nav .fas{
     
     .btnproject {
         margin-left: 5pc;
+        margin-top: 3pc;
     }
+    .project .ProjectLeft img {
+        height: 11rem;
+        padding-left: 25px;
+    }
+
+.ProjectLeft,.ProjectRight{
+    flex-basis: 100%;
+}
 
     .contact-left, .contact-right {
         flex-basis: 90%;
@@ -693,7 +578,20 @@ nav .fas{
         margin-top: 0px;
         margin-right: 1pc;
     }
-
+    .contact-left p {
+        margin-top: 30px;
+        margin-left: 4pc;
+    
+    }
+    .social-icons {
+        margin-top: 30px;
+        margin-left: 6pc;
+    
+    }
+    .contact-right form {
+        width: 100%;
+        margin-left: 15px;
+    }
     .copyright {
         font-size: 14px;
     }
