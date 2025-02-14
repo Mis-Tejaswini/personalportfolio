@@ -3,7 +3,7 @@ let can = document.getElementById("can");
 let c = document.getElementsByClassName("listitem");
 let ul = document.getElementsByClassName("ul");
 let windowwidth = window.innerWidth;
-
+/*
 b.addEventListener('click', () => {
   b.style.display = "none";
   can.style.display = "block";
@@ -42,7 +42,24 @@ let rmbtn=document.getElementById("rmbtn");
 
   rmbtn.addEventListener("click",()=>{
     rm.classList.toggle("readmoreinfo");
-  });
+  }); */
+
+document.getElementById("menuIcon").addEventListener("click", openmenu);
+
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+  console.log("Opening menu...");
+  sidemenu.classList.add("open");
+  sidemenu.style.right= "150px";
+}
+
+function closemenu(){
+  console.log("Closing menu...");
+  sidemenu.classList.remove("open");
+  sidemenu.style.right= "-200px";
+}
 
 
   function switchTab(onclick, skills,experience,education) {

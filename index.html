@@ -22,61 +22,26 @@
 <div class="container">
   <nav>
     <img src="files/MYLOGO.png" class="logo">
-    <ul class="ul">
+    <ul  id="sidemenu">
      <!-- <a class="" style="font-size: 2rem;" href="#">Portfo<span>lio</span></a> -->
       <li><a class="listitem" onclick="cls()" href="#homesectionn">Home</a></li>
       <li><a class="listitem" onclick="cls()" href="#aboutsection">About</a></li>
       <li><a class="listitem" onclick="cls()" href="#myService">Services</a></li>
       <li><a class="listitem" onclick="cls()" href="#projectsection">Portfolio</a></li>
       <li><a class="listitem" onclick="cls()" href="#contactsection">Contact</a></li>
+      <i class="fas fa-xmark" onclick="closemenu()"></i>
+     </ul>
+     <i class="fas fa-bars" id="menuIcon" onclick="openmenu()"></i>
     
-    </ul>
+     
   </nav>
 <div class="header-text">
 <p id="element"> Java Developer </p>
 <h1>Hi, I'm <span> Tejaswini </span> <br> From India </h1>
 </div>
-
 </div>
 
 </section>
-<!--  <section class="navigation">
-    <nav class="navbar">
-      <div class="items">
-        <ul class="ul">
-          <a class="" style="font-size: 2rem;" href="#">Portfo<span>lio</span></a>
-          <li><a class="listitem" onclick="cls()" href="#homesectionn">Home</a></li>
-          <li><a class="listitem" onclick="cls()" href="#skillsection">Skills</a></li>
-          <li><a class="listitem" onclick="cls()" href="#educationsection">Education</a></li>
-          <li><a class="listitem" onclick="cls()" href="#projectsection">Projects</a></li>
-          <li><a class="listitem" onclick="cls()" href="#contactsection">Contact</a></li>
-          <i class="fa-solid fa-bars bar" id="btn"></i>
-          <i class="fafa" id="can">&#xf00d;</i>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
-  <div class="container">
-
-     Home Section  
-
-    <section class="homesectionn" id="homesectionn">
-      <div class="home">
-        <div class="col">
-          <div class="left" data-aos="fade-up">
-            <div class="text1">Hello, I am</div>
-            <div class="text2" data-aos="fade-right" data-aos-duration="2000"> Tejaswini </div>
-            <div class="text3">
-              <div class="mainline"> Looking for the role of <br> <span> Java Developer</span></div><br><br>
-              <a href="#contactsection">Hire me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  -->
-
 
     <!-- About Session  -->
     <section class="aboutsection" id="aboutsection">
@@ -125,7 +90,7 @@
       </div> 
     </div>
     </section>
-
+<!--   Service Section  -->
 <section class="myServicesection">
   <div class="myService" id="myService">
 <div class="container">
@@ -154,109 +119,19 @@
 </div>
   </div>
 </section>
-    <!-- Skills Section  
 
-    <section class="skillsection" id="skillsection">
-      <h1 class="title">My Skills</h1>
-      <div class="skills">
-        <div class="left" data-aos="fade-right">
-          <div class="text">My creative Skills & Experiences.</div>
-          <summary>
-            <p>I have learned C, C++, Java and Python. I am also familiar with HTML, CSS, JS. I hava worked with
-              the database languages like MySQL, MongoDB. I want to become a full stake Java developer. <span id="readmoreinfo" class="readmoreinfo">
-              I have learned Servlet, JSP and looking forword to learn Spring framework.
-            </span>
-            </p>
-          </summary>
-          <a id="rmbtn">Read more</a>
-
-        </div>
-        <div class="right" data-aos="fade-left">
-          <div class="bars">
-            <div class="info">
-              <span>Java</span>
-              <span>80%</span>
-            </div>
-            <div class="line java"></div>
-          </div>
-          <div class="bars">
-            <div class="info">
-              <span>JavaScript</span>
-              <span>70%</span>
-            </div>
-            <div class="line javascript"></div>
-          </div>
-          <div class="bars">
-            <div class="info">
-              <span>React JS</span>
-              <span>70%</span>
-            </div>
-            <div class="line react"></div>
-          </div>
-          <div class="bars">
-            <div class="info">
-              <span>HTML+CSS</span>
-              <span>80%</span>
-            </div>
-            <div class="line html"></div>
-          </div>
-          <div class="bars">
-            <div class="info">
-              <span>C/C++</span>
-              <span>80%</span>
-            </div>
-            <div class="line c"></div>
-          </div>
-
-          <div class="bars">
-            <div class="info">
-              <span>SQL, MySQL</span>
-              <span>70%</span>
-            </div>
-            <div class="line mysql"></div>
-          </div>
-        </div>
-      </div>
-    </section>
--->
-<!-- Eduction Session  
-
-    <section class="educationsection" id="educationsection">
-      <h1>Education</h1>
-      <div class="education">
-        <div class="left" data-aos="fade-right">
-          <img src="files/college.png" alt="" class="images">
-        </div>
-        <div class="right" data-aos="fade-left">
-          <div class="text">
-            <ul>
-              <li><span>Master of Computer Application </span><br> Degree College of Physical Education HVPM, Amravati
-                <p>8.41 CGPA [May, 2022] </p>
-              </li>
-
-              <li> <span>Bachelor of Science (Computer Science) <br></span> Degree College of Physical Education HVPM,
-                Amravati<p>64.31% [Oct, 2020]</p>
-              </li>
-
-              <li><span> 12th (HSC) <br></span> Maharashtra State Board Pune <p> 50.77% [Feb, 2017]
-                </p>
-              </li>
-
-              <li><span> 10th (SSC) <br></span> Maharashtra State Board Pune <p> 74.60% [Mar, 2015] </p>
-              </li>
-            </ul>
-          </div><br>
-          <a href="files/Resume-2-24.pdf" target="_blank">Download CV</a>
-        </div>
-      </div>
-    </section>
--->
     <!-- Projects Section   -->
     <section class="projectsection" id="projectsection">
       <div class="container">
-      <h1 class="sub-title">Projects</h1>
+        <h1 class="sub-title">Projects</h1>
       <div class="project">
-        <div class="left" data-aos="fade-right">
+        
+        <div class="left" data-aos="fade-left">
+          <img src="files/project.png" alt="prjpic" class="images">
+        </div>
+
+        <div class="right" data-aos="fade-right">
+         
           <div class="text">
 
             <ul style="list-style-type: disclosure-closed;">
@@ -273,9 +148,7 @@
         </div>
         
         </div>
-        <div class="right" data-aos="fade-left">
-          <img src="files/project.png" alt="prjpic" class="images">
-        </div>
+        
       </div>
     </div>
     </section>
@@ -328,31 +201,6 @@
         by GreatStack
       </p>
   </div>
-  <!-- Footer  
-  <footer>
-    <div class="fcol">
-      <div class="col1" data-aos="fade-right">
-        <h2>Mobile Number</h2>
-        <a href="tel:9604029818">+919604029818</a>
-      </div>
-      <div class="col2" data-aos="fade-left">
-        <h2>Address</h2>
-        <a>Parvati Nagar No. 2, Akoli Road, Amravati, Maharashtra - 444607</a href="">
-      </div>
-      <div class="col3" data-aos="fade-right">
-        <h2>Mail</h2>
-        <a href="mailto:bambaltejaswini@gmail.com">bambaltejaswini@gmail.com</a>
-      </div>
-      <div class="col4" data-aos="fade-left">
-        <h2>Follow me</h2>
-        <a href="https://www.linkedin.com/in/tejaswini-bambal-663123237/" target="_blank"><i
-            class="fa fa-linkedin-square"> LinkedIn</i></a>
-        <a href="https://wa.me/+919604029818" target="_blank"><i class="fa fa-whatsapp"> WhatsApp</i></a>
-        <a href="facebook.com" target="_blank"><i class="fa fa-facebook-official"> Facebook</i></a>
-        <a href="https://github.com/Mis-Tejaswini" target="_blank"><i class="fa fa-github"> GitHub</i></a>
-      </div>
-    </div>  
-  </footer>  -->
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
