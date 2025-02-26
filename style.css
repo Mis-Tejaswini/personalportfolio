@@ -229,8 +229,7 @@ nav ul li a:hover::after{
 .ProjectRight{
     flex-basis: 60%;
 }
-
-.project .ProjectLeft img {
+ .ProjectLeft img {
     height: 17rem;
 }
 .project .text li{
